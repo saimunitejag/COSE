@@ -34,7 +34,7 @@
 
       } // commits by month
 
-      var pieChartData = [
+      var forksPieChartData = [
       {
         value: 592,
         color:"#F7464A",
@@ -67,7 +67,7 @@
       }
       ] // pie chart data
 
-      var donutChartData = [
+      var watchersDonutChartData = [
       {
         value: 1814,
         color:"#F7464A",
@@ -101,7 +101,7 @@
       ] // donut chart data
 
       // radar chart
-      var radarChartData = {
+      var languagesRadarChartData = {
         labels: ["Python", "Ruby", "Puppet", "Haxe", "Shell", "C", "Javascript", "C++", "Java"],
         datasets: [
         {
@@ -162,41 +162,29 @@
 
       ];
 
-      window.onload = function(){
-        var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d");
+      var lineChartData = {
+        labels : ["January","February","March","April","May","June","July"],
+        datasets : [
+        {
+          label: "My First dataset",
+          fillColor : "rgba(220,220,220,0.2)",
+          strokeColor : "rgba(220,220,220,1)",
+          pointColor : "rgba(220,220,220,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(220,220,220,1)",
+          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+        },
+        {
+          label: "My Second dataset",
+          fillColor : "rgba(151,187,205,0.2)",
+          strokeColor : "rgba(151,187,205,1)",
+          pointColor : "rgba(151,187,205,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+        }
+        ]
 
-        var commonLanguages_bar = document.getElementById("commonLanguages-bar").getContext("2d");
-
-        var ctx_pie = document.getElementById("templatemo-pie-chart").getContext("2d");
-
-        var ctx_doughnut = document.getElementById("templatemo-doughnut-chart").getContext("2d");
-
-        var ctxRadar = document.getElementById("templatemo-radar-chart").getContext("2d");
-
-        var ctxPolar = document.getElementById("templatemo-polar-chart").getContext("2d");
-
-        window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true
-        }); // final
-
-        window.commonLanguages = new Chart(commonLanguages_bar).Bar(commonLanguages, {
-          responsive: true
-        }); // final
-
-        window.myPieChart = new Chart(ctx_pie).Pie(pieChartData,{
-          responsive: true
-        });
-
-        window.myDoughnutChart = new Chart(ctx_doughnut).Doughnut(donutChartData,{
-          responsive: true
-        });
-
-        var myRadarChart = new Chart(ctxRadar).Radar(radarChartData, {
-          responsive: true
-        });
-
-        var myPolarAreaChart = new Chart(ctxPolar).PolarArea(polarAreaChartData, {
-          responsive: true
-        });
-
-      };
+      }; // lineChartData used for testing

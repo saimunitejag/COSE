@@ -34,6 +34,39 @@
 
       } // commits by month
 
+      var topUsersByReposOwned = {
+        labels : ["danehans","BrianHicks","alop", "rickerc", "vallard", "fluffy", "iawells", "johnweldon", "ddutta", "kecorbin"],
+        datasets : [
+        {
+          label: "Top Users by # of Repos Owned",
+          fillColor : "rgba(151,187,205,0.2)",
+          strokeColor : "rgba(151,187,205,1)",
+          pointColor : "rgba(151,187,205,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [77, 59, 45, 44, 36, 33, 31, 30, 23, 22]
+        }
+        ]
+      } // top users by Repos owned
+
+      var topUsersByFollowers = {
+      labels : ["fluffy","danehans","BrianHicks", "pcl", "ddutta", "kazhang", "vallard", "hpreston", "Snergster", "alop"],
+      datasets : [
+        {
+          label: "Top Users by # of Followers",
+          fillColor : "rgba(151,187,205,0.2)",
+          strokeColor : "rgba(151,187,205,1)",
+          pointColor : "rgba(151,187,205,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [55, 21, 17, 17, 15, 13, 13, 12, 12, 11]
+      }
+      ]
+
+      } // top users by Followers
+
       var forksPieChartData = [
       {
         value: 592,

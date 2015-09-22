@@ -1,0 +1,41 @@
+.contributors{
+    border-top: 1px solid #e6e6e6;
+	padding-bottom: 60px;
+}
+.panel-shadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+}
+.contributors .contributor{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.contributors .contributor img{
+	max-width: 55px;
+	float: left;
+	border: 1px solid #f5f5f5;
+	border-radius: 5px;
+}
+
+.contributors .contributor .member-details{
+	margin-left: 65px;
+}
+
+.contributors .contributor .member-details h4{
+	margin: 0;
+	margin-bottom: 3px;
+	padding-top: 9px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.contributors .contributor .member-details h4 a{
+	color: #787878;
+}
+
+.contributors .contributor .member-details span{
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+	color: #aaaaaa;
+}	

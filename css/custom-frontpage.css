@@ -58,7 +58,6 @@ section#tweets{
     /*background-size: cover;*/
     color: white;
     padding: 0px 0 20px;
-    float: right;
 }
 
 section#projects{
@@ -103,7 +102,6 @@ section#video{
     background-size: cover;
     /*color: white;*/
     padding: 0px 0 20px;
-    float:left;
 }
 
 .social-icons li {

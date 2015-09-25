@@ -134,6 +134,11 @@ section#video{
     line-height: 280px;
 }
 
+.subpages {
+  height: 200px;
+  line-height: 180px;
+}
+
 .cisco{
     vertical-align: middle;
     margin-right: 10px;
@@ -174,7 +179,7 @@ section#video{
   margin-bottom: 3px;
   padding-top: 9px;
   padding-left: 3px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -185,7 +190,7 @@ section#video{
 .contributor .contributor-details span{
   padding-left: 3px;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   color: #787878;
 }
 
@@ -204,19 +209,24 @@ h2.blue-headings {
   text-align: center;
 }
 
+.logos-thumbnail{
+  max-width: 150px;
+  max-height: 150px;
+}
+
 .copyright-footer{
   margin-bottom: 20px;
   text-align: center;
 }
 
 .row-centered {
-                text-align:center;
-              }
+  text-align:center;
+}
 
 .col-centered {
-    display:inline-block;
-    float:none;
-    margin-right:-2px;
+  display:inline-block;
+  float:none;
+  margin-right:-2px;
               }
 
 section#tiles{

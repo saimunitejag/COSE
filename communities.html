@@ -117,9 +117,9 @@
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">           
-                      <canvas id="templatemo-polar-chart"></canvas>
-                      <h4>Polar Area Chart</h4>
-                      <span class="text-muted">Curabitur</span> 
+                      <canvas id="contributor-doughnut"></canvas>
+                      <h4>Event Share</h4>
+                      <span class="text-muted">Top contributors by share of events</span> 
                     </div>
                 </div>
                 <br>
@@ -215,7 +215,7 @@
 
         var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d"); // DONE
 
-        var ctxPolar = document.getElementById("templatemo-polar-chart").getContext("2d");
+        var contributor_doughnut = document.getElementById("contributor-doughnut").getContext("2d");
 
         window.forksPieChart = new Chart(forks_pie).Pie(forksPieChartData,{
           responsive: true
@@ -229,9 +229,9 @@
           responsive: true
         }); // final
 
-        var myPolarAreaChart = new Chart(ctxPolar).PolarArea(polarAreaChartData, {
+        window.contributorDoughnutChart = new Chart(contributor_doughnut).Doughnut(contributorPieChartData,{
           responsive: true
-        });
+        }); // final
 
       };
     </script>

@@ -135,7 +135,7 @@
 
       // radar chart
       var languagesRadarChartData = {
-        labels: ["Python","Ruby","Shell","C","Go","Javascript","Java", "Haxe"],
+        labels: ["Python","Ruby", "Haxe", "Shell","C","Go","Javascript","Java"],
         datasets: [
         {
           label: "Cisco Users",
@@ -145,7 +145,7 @@
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(151,187,205,1)",
-          data: [35, 12, 4, 3, 3, 2, 2, 5]
+          data: [35, 12, 5, 4, 3, 3, 2, 2, ]
         }
         ]
       }; // radar chart

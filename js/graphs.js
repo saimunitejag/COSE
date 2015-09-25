@@ -135,65 +135,60 @@
 
       // radar chart
       var languagesRadarChartData = {
-        labels: ["Python", "Ruby", "Puppet", "Haxe", "Shell", "C", "Javascript", "C++", "Java"],
+        labels: ["Python","Ruby","Shell","C","Go","Javascript","Java", "Haxe"],
         datasets: [
         {
           label: "Cisco Users",
-          fillColor: "rgba(220,220,220,0.2)",
-          strokeColor: "rgba(220,220,220,1)",
-          pointColor: "rgba(220,220,220,1)",
-          pointStrokeColor: "#fff",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
-          data: [31.6, 15.3, 14.3, 4.9, 4.2, 2.9, 2, 1.6, 1.3]
-        },
-        {
-          label: "General Users",
           fillColor: "rgba(151,187,205,0.2)",
           strokeColor: "rgba(151,187,205,1)",
           pointColor: "rgba(151,187,205,1)",
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(151,187,205,1)",
-          data: [11.6, 18.8, 0.1, 0.1, 2, 6.2, 16, 3.5, 7.4]
+          data: [35, 12, 4, 3, 3, 2, 2, 5]
         }
         ]
       }; // radar chart
 
-      // polar area chart
-      var polarAreaChartData = [
+      var contributorPieChartData = [
       {
-        value: 31.6,
+        value: 25,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Python"
+        label: "johnweldon"
       },
       {
-        value: 15.3,
+        value: 11,
         color: "#46BFBD",
         highlight: "#5AD3D1",
-        label: "Ruby"
+        label: "Snergster"
       },
       {
-        value: 4.9,
+        value: 9,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Haxe"
+        label: "fluffy"
       },
       {
-        value: 4.2,
-        color: "#949FB1",
-        highlight: "#A8B3C5",
-        label: "Shell"
+        value: 8,
+        color: "#e6ad14",
+        highlight: "#e8b52b",
+        label: "danehans"
       },
       {
-        value: 2.9,
-        color: "#4D5360",
-        highlight: "#616774",
-        label: "C"
+        value: 7,
+        color: "#9b12cf",
+        highlight: "#cd72f0",
+        label: "BrianHicks"
+      },
+      {
+        value: 5,
+        color: "rgba(151,187,205,1)",
+        highlight: "rgba(151,187,205,0.5)",
+        label: "altvnk"
       }
+      ] // pie chart data
 
-      ];
 
       var lineChartData = {
         labels : ["January","February","March","April","May","June","July"],

@@ -179,7 +179,7 @@
           <div class="container">
           <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="text-center"><h2>Cisco's GitHub Live Data Feed</h2></div>
+                  <div class="text-center"><h2>Cisco's GitHub Live Data</h2></div>
                   <br>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                       <canvas id="forks-pie-chart"></canvas>
@@ -200,26 +200,20 @@
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">           
-                      <canvas id="templatemo-polar-chart"></canvas>
-                      <h4>Polar Area Chart</h4>
-                      <span class="text-muted">Curabitur</span> 
+                      <canvas id="contributor-doughnut"></canvas>
+                      <h4>Event Share</h4>
+                      <span class="text-muted">Top contributors by share of events</span> 
                     </div>
                 </div>
               </div>
               <br>
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
+              <div class="row row-centered">
+                <div class="col-md-8 col-centered col-sm-12 col-centered">
                   <div class="panel panel-primary">
                     <div class="panel-heading text-center">Cisco Contributions by Month in 2015</div>
                     <canvas id="monthlyContributions-line"></canvas>
                   </div>                       
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="panel panel-primary">
-                    <div class="panel-heading text-center">Most Commonly Used Languages</div>
-                    <canvas id="commonLanguages-bar"></canvas>
-                  </div>
-                </div> 
               </div>
             </div>
           </div>
@@ -287,23 +281,17 @@
     <script src="js/graphs.js"></script>
     <script>
         window.onload = function(){
-        var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d"); // DONE
+        var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d");
 
-        var commonLanguages_bar = document.getElementById("commonLanguages-bar").getContext("2d"); // DONE
+        var forks_pie = document.getElementById("forks-pie-chart").getContext("2d");
 
-        var forks_pie = document.getElementById("forks-pie-chart").getContext("2d"); // DONE
+        var watchers_doughnut = document.getElementById("watchers-doughnut-chart").getContext("2d");
 
-        var watchers_doughnut = document.getElementById("watchers-doughnut-chart").getContext("2d"); // DONE
+        var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d");
 
-        var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d"); // DONE
-
-        var ctxPolar = document.getElementById("templatemo-polar-chart").getContext("2d");
+        var contributor_doughnut = document.getElementById("contributor-doughnut").getContext("2d");
 
         window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true
-        }); // final
-
-        window.commonLanguages = new Chart(commonLanguages_bar).Bar(commonLanguages, {
           responsive: true
         }); // final
 
@@ -319,9 +307,9 @@
           responsive: true
         }); // final
 
-        var myPolarAreaChart = new Chart(ctxPolar).PolarArea(polarAreaChartData, {
+        window.contributorDoughnutChart = new Chart(contributor_doughnut).Doughnut(contributorPieChartData,{
           responsive: true
-        });
+        }); // final
 
       };
     </script>

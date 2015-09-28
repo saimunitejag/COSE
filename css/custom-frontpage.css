@@ -212,6 +212,9 @@ h2.blue-headings {
 .logos-thumbnail{
   max-width: 150px;
   max-height: 150px;
+  position:relative;
+  overflow:hidden;
+  padding: 0;
 }
 
 .copyright-footer{
@@ -228,6 +231,19 @@ h2.blue-headings {
   float:none;
   margin-right:-2px;
               }
+
+.logos-thumbnail:hover
+{
+-moz-box-shadow: 0 0 5px 5px #ddd;
+-webkit-box-shadow: 0 0 5px 5px #ddd;
+box-shadow: 0 0 5px 5px #ddd;
+}
+
+.img-circle:hover{
+-moz-box-shadow: 0 0 5px 5px #ddd;
+-webkit-box-shadow: 0 0 5px 5px #ddd;
+box-shadow: 0 0 5px 5px #ddd;
+}
 
 section#tiles{
     background-color: #fff;

@@ -8,6 +8,33 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+@font-face {
+  font-family: 'CiscoSansTTLight';
+  src: url('../fonts/CiscoSansTTLight.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/CiscoSansTTLight.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CiscoSansTTLight.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/CiscoSansTTLight.ttf') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/CiscoSansTTLight.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CiscoSansTTLight.ttf') format('svg'); /* Legacy iOS */
+}
+
+p {
+    font-weight: normal;
+    font: 14px/1.55 'CiscoSansTTLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+
+h1 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+h2 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+h3 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+h4 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
 .info .sub-title {
   margin-bottom: 20px;
   margin-top: 0;
@@ -44,7 +71,7 @@ section#intro{
     width: 100%;
     background-color: #f9f9f9;
     background-position: center;
-    padding: 0px 0 20px;
+    padding: 0px 0 0px;
 }
 section#tweets{
     position: relative;

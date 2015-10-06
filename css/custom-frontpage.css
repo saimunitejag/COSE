@@ -228,6 +228,13 @@ section#video{
   .subpage-headline{
     font-size: 3em;
   }
+  .navbar-brand{
+    margin:0 auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
 }
 
 .headline-small {
@@ -278,7 +285,7 @@ section#video{
 }
 
 h2.blue-headings {
-  color: #0067ce;
+  color: #097DBC;
   font-weight: bold;
 }
 

@@ -232,9 +232,28 @@ section#video{
     margin:0 auto;
     left: 50%;
     position: relative;
-    transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
+
+.navbar-brand {
+    float: left;
+    height: 52px;
+}
+
+@media (max-width: 767px) {
+    .navbar-toggle {
+      border: none;
+      outline: none;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-right: 9px;
+      padding-left: 9px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 }
 
 .headline-small {

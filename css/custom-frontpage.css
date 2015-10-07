@@ -268,7 +268,7 @@ section#video{
   .navbar-brand{
     margin:0 auto;
     left: 50%;
-    position: relative;
+    position: fixed;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -293,11 +293,45 @@ section#video{
       padding-left: 9px;
       margin-top: 10px;
       margin-bottom: 10px;
+      float: left;
     }
   .container>.navbar-header {
     margin-right: 0px;
   }
 }
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000;
+}
+
+/*    border: none;*/
+/*    outline: none;*/
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+/*    padding-right: 14px;
+    padding-left: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    border-radius: 0px;*/
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #097DBC;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #097DBC;
+}
+
+/*background-color: #000;*/
+/*position: fixed;*/
 
 .headline-small {
     color: #fff;

@@ -229,6 +229,10 @@ section#video{
     color: #39393B;
 }
 
+.navbar-inverse .navbar-nav>li>a:focus{
+    color: #858688;
+}
+
 .subpages {
   height: 200px;
   line-height: 180px;
@@ -276,6 +280,29 @@ section#video{
   .container>.navbar-header {
     margin-right: 0px;
   }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #858688;
+    border-bottom: 1px solid #858688;
+  }
+  .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #858688;
+    }
+    .nav>li>a{
+      padding-left: 10px;
+    }
+    .open .dropdown-menu>li>a {
+      padding-left: 10px;
+    }
 }
 
 .navbar-brand {
@@ -298,9 +325,26 @@ section#video{
     .navbar-brand {
       padding-left: 16px;
     }
-  .container>.navbar-header {
-    margin-right: 0px;
-  }
+    .container>.navbar-header {
+      margin-right: 0px;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: #858688;
+      border-bottom: 1px solid #858688;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #858688;
+    }
+    .navbar-nav {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .navbar-collapse {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {

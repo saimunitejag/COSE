@@ -211,6 +211,10 @@ section#video{
     color: #39393B;
 }
 
+.navbar-inverse .navbar-nav>li>a:focus{
+    color: #858688;
+}
+
 .subpages {
   height: 200px;
   line-height: 180px;

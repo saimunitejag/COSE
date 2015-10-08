@@ -87,6 +87,10 @@ h4 {
   padding-bottom: 15px;
 }
 
+.githubdata-spacing{
+  padding-bottom: 30px;
+}
+
 .copyright-footer a{
     color: #fff;
 }
@@ -174,7 +178,7 @@ section#ending{
 section#gitdata{
     position: relative;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #fff;
     background-position: center;
     background-size: cover;
     padding: 0px 0 20px;
@@ -183,7 +187,7 @@ section#gitdata{
 section#video{
     position: relative;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #fff;
     background-position: center;
     background-size: cover;
     padding: 0px 0 20px;
@@ -234,6 +238,7 @@ section#video{
 
 .navbar{ 
     background-color: #fff;
+    border-bottom: 1px solid #858688;
 }
 
 .navbar-inverse .navbar-nav>li>a {

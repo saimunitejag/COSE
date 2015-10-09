@@ -238,7 +238,7 @@ section#video{
 
 .navbar{ 
     background-color: #fff;
-    border-bottom: 1px solid #858688;
+    border-bottom: 1px solid #cccccc;
 }
 
 .navbar-inverse .navbar-nav>li>a {

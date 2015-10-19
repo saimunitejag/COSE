@@ -415,6 +415,55 @@ box-shadow: 0 0 5px 5px #ddd;
 box-shadow: 0 0 5px 5px #ddd;
 }
 
+/*Overlay text on images beginning*/
+
+.image-wrapper {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 1px 200px rgba(0,0,0,0.6), inset 0 0 0 0px #1c252c;
+  color: #fff;
+  display: none;
+}
+
+.image-wrapper:hover .image-overlay {
+   display: inline-block;
+}
+
+.image-wrapper .image-overlay .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*height: 40px;*/
+  width: 200px;
+  /*margin: 0 auto;*/
+  /*display: inline-block; margin: 0px auto;*/
+  /*margin-top: -10px;*/
+  transform:translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*END*/
+
 section#tiles{
     background-color: #fff;
 }

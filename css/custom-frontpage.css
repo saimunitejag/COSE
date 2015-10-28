@@ -51,6 +51,10 @@ h4 {
     font-size: 24px;
 }
 
+.container-navbar{
+  padding-right: 0px;
+}
+
 .icon-opensource {
     color: #0067ce;
     }
@@ -99,8 +103,9 @@ h4 {
   margin: 0 auto;
 }
 
-.navbar-inverse {
-    background-color: #58585B;
+.navbar-inverse {  
+  background-color: #666666;
+  background-image: url(../img/3px-tile.png);
 }
 
 section#intro{
@@ -193,26 +198,22 @@ section#video{
 }
 
 .site-header {
-    height: 300px;
+    height: 250px;
     background-color: #0073e5;
     background-image: url(../img/3px-tile.png);
-    line-height: 280px;
-}
-
-.navbar{ 
-    background-color: #fff;
+    line-height: 230px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #858688;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    color: #39393B;
+    color: #c0c0c0;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus{
-    color: #858688;
+    color: #fff;
 }
 
 .subpages {
@@ -246,7 +247,7 @@ section#video{
 
 @media(max-width: 480px) {
   .headline {
-    font-size: 5em;
+    font-size: 4em;
   }
   .subpage-headline{
     font-size: 3em;
@@ -258,9 +259,6 @@ section#video{
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-  }
-  .container>.navbar-header {
-    margin-right: 0px;
   }
 }
 
@@ -284,27 +282,11 @@ section#video{
     .navbar-brand {
       padding-left: 16px;
     }
-  .container>.navbar-header {
-    margin-right: 0px;
-  }
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #000;
 }
-
-/*    border: none;*/
-/*    outline: none;*/
-    /* margin-left: 5px; */
-    /* margin-right: 5px; */
-/*    padding-right: 14px;
-    padding-left: 14px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    float: left;
-    padding-top: 19px;
-    padding-bottom: 20px;
-    border-radius: 0px;*/
 
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #097DBC;
@@ -399,7 +381,7 @@ h2.blue-headings {
 .col-centered {
   display:inline-block;
   float:none;
-  margin-right:-2px;
+  /*margin-right:-2px;*/ /* NOTE */
 }
 
 .logos-thumbnail:hover

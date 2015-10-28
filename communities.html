@@ -9,23 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="stylesheet" href="css/templatemo_main.css">
-
-    <title>Open Source Communities</title>
+    <title>Open Source Communities | Cisco</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/custom-frontpage.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
 
 </head>
@@ -43,9 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <a class="navbar-brand" href="#">Cisco Logo</a> -->
-                <a class="navbar-brand" href="index.html"><img class="cisco" src="img/Cisco_Logo.png" alt="Cisco Systems" height="28" width="54"></a>
-                <!-- <img class="cisco" src="http://research.cisco.com/img/background/cisco_logo.png" alt="Cisco Systems" height="25" width="52"> -->
+                <a class="navbar-brand" href="index.html"><img class="cisco" src="img/Cisco_Logo_white.png" alt="Cisco Systems" height="28" width="54"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -88,7 +76,7 @@
     <section id="tiles">
     <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+              <div class="col-md-12 col-sm-12">
                 <h2 class="text-center blue-headings">Strength Comes from Community</h2>
 
                 <h4>Cisco recognizes that Open Source communities are innovation centers where the world’s greatest minds come together to work towards a common goal. Open Source technologies and the communities behind them are where much of this innovation is being driven from today. 
@@ -98,9 +86,10 @@
                   We contribute to Open Source through thought leadership, code contributions and financial support to the non-profit foundations behind them.</h4>
                 <h2 class="text-center blue-headings">Live Feed Data From Communities</h2>
                 <br>
+              </div>
             </div>
-            </div>
-                <div class="row">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                       <canvas id="forks-pie-chart"></canvas>
                       <h4>Number of Forks</h4>
@@ -124,13 +113,12 @@
                       <h4>Event Share</h4>
                       <span class="text-muted">Top contributors by share of events</span> 
                     </div>
+                 <br>
                 </div>
-                <br>
-                
-                <h2 class="text-center blue-headings">Take A Look At Communities We Are Involved In...</h2>
-                <!-- <br> -->
+              </div>
               
-                <div class="row">
+              <div class="row">
+                <h2 class="text-center blue-headings">Take A Look At Communities We Are Involved In...</h2>
                 <br>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                       <a href="#">
@@ -286,10 +274,8 @@
                     </div>
                 <br>
                 </div>
-              
-      </div>
-    <br>
-            
+              <br>
+      </div>        
     </section>
 
     <section id="ending">
@@ -338,29 +324,29 @@
 
     <script>
       window.onload = function(){
-        var forks_pie = document.getElementById("forks-pie-chart").getContext("2d"); // DONE
+        var forks_pie = document.getElementById("forks-pie-chart").getContext("2d");
 
-        var watchers_doughnut = document.getElementById("watchers-doughnut-chart").getContext("2d"); // DONE
+        var watchers_doughnut = document.getElementById("watchers-doughnut-chart").getContext("2d");
 
-        var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d"); // DONE
+        var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d");
 
         var contributor_doughnut = document.getElementById("contributor-doughnut").getContext("2d");
 
         window.forksPieChart = new Chart(forks_pie).Pie(forksPieChartData,{
           responsive: true
-        }); // final
+        });
 
         window.watchersDoughnutChart = new Chart(watchers_doughnut).Doughnut(watchersDonutChartData,{
           responsive: true
-        }); // final
+        });
 
         var LanguagesRadarChart = new Chart(languagesRadar).Radar(languagesRadarChartData, {
           responsive: true
-        }); // final
+        });
 
         window.contributorDoughnutChart = new Chart(contributor_doughnut).Doughnut(contributorPieChartData,{
           responsive: true
-        }); // final
+        });
 
       };
     </script>

@@ -96,7 +96,8 @@
                                   <canvas id="topUsersByFollowers-bar"></canvas>
                                 </div>
                             </div>
-                  </div>          
+                  </div>  
+                          
         <h2 class="blue-headings text-center"><b>Take A Look At Our Top Contributors</b></h2>
                 <!-- <br> -->
         <hr>
@@ -392,15 +393,15 @@
         var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d");
 
         window.topUsersByReposBar = new Chart(topUsersByRepos_bar).Bar(topUsersByReposOwned, {
-          responsive: true
+          responsive: true, scaleFontSize: 10
         });
 
         window.topUsersByFollowersBar = new Chart(topUsersByFollowers_bar).Bar(topUsersByFollowers, {
-          responsive: true
+          responsive: true, scaleFontSize: 10, scaleLabel: "<%= '  ' + value%>"
         });
 
         window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true
+          responsive: true, scaleLabel: "<%= '  ' + value%>"
         });
       };
     </script>

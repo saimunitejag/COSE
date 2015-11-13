@@ -354,6 +354,8 @@ section#video{
 h2.blue-headings {
   color: #097DBC;
   font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .Devnet-logo{
@@ -512,3 +514,10 @@ footer {
     margin: 0px 0;
     margin-top: 10px;
 }
+
+/*Fix for canvas and Chart.js*/
+/*canvas{
+    width: 100% !important;
+    max-width: 991px;
+    height: auto !important;
+}*/

@@ -1,7 +1,7 @@
       // Line chart
       var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
       var commonLanguages = {
-        labels : ["Python","Ruby","Shell","C","Go","Javascript","Java"],
+        labels : ["Python","Javascript", "Java", "Ruby","C","C++","Go","Others"],
         datasets : [
         {
           label: "Most Common Languages",
@@ -11,14 +11,14 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [35, 12, 5, 3, 3, 2, 2]
+          data : [24, 15, 13, 12, 8, 4, 4, 20]
         }
         ]
 
       } // common languages
 
       var monthlyCommits = {
-        labels : ["January","February","March", "April", "May", "June", "July", "August", "September"],
+        labels : ["January","February","March", "April", "May", "June", "July", "August", "September", "October"],
         datasets : [
         {
           label: "Monthly Commits",
@@ -28,14 +28,14 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [324,407,160,148,171,111,286,201,148]
+          data : [320,405,153,148,167,111,281,200,146, 201]
         }
         ]
 
       } // commits by month
 
       var topUsersByReposOwned = {
-        labels : ["danehans","BrianHicks","alop", "rickerc", "vallard", "fluffy", "iawells", "johnweldon", "ddutta", "kecorbin"],
+        labels : ["v0lkan","hildjj","lizhizhou", "danehans", "WenyuChang", "davidzou", "svalleru", "retr0h", "fuji246", "ttsvetko"],
         datasets : [
         {
           label: "Top Users by # of Repos Owned",
@@ -45,13 +45,13 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [77, 59, 45, 44, 36, 33, 31, 30, 23, 22]
+          data : [81, 81, 80, 77, 74, 66, 65, 64, 64, 56]
         }
         ]
       } // top users by Repos owned
 
       var topUsersByFollowers = {
-      labels : ["fluffy","danehans","BrianHicks", "pcl", "ddutta", "kazhang", "vallard", "hpreston", "Snergster", "alop"],
+      labels : ["hemanth","hoisie","v0lkan", "brikis98", "jonathanslenders", "AlexBaranosky", "retr0h", "rohanagrawal", "akeep", "mestery"],
       datasets : [
         {
           label: "Top Users by # of Followers",
@@ -61,7 +61,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [55, 21, 17, 17, 15, 13, 13, 12, 12, 11]
+          data : [415, 361, 243, 184, 158, 63, 62, 58, 57, 41]
       }
       ]
 
@@ -69,64 +69,64 @@
 
       var forksPieChartData = [
       {
-        value: 592,
+        value: 616,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Openh264"
       },
       {
-        value: 81,
+        value: 343,
         color: "#46BFBD",
         highlight: "#5AD3D1",
-        label: "Libsrtp"
+        label: "Web.go"
       },
       {
-        value: 79,
+        value: 176,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Pyvim"
+        label: "Mantl"
       },
       {
-        value: 73,
+        value: 159,
         color: "#e6ad14",
         highlight: "#e8b52b",
-        label: "Python-Prompt-Toolkit"
+        label: "Redis"
       },
       {
-        value: 64,
+        value: 102,
         color: "#9b12cf",
         highlight: "#cd72f0",
-        label: "Thor"
+        label: "Moustache"
       }
       ] // pie chart data
 
       var watchersDonutChartData = [
       {
-        value: 1814,
+        value: 1892,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Openh264"
       },
       {
-        value: 760,
+        value: 851,
         color: "#2e8a0c",
         highlight: "#3db810",
         label: "PtPython"
       },
       {
-        value: 1516,
+        value: 1557,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Pyvim"
       },
       {
-        value: 1672,
+        value: 1779,
         color: "#e6ad14",
         highlight: "#e8b52b",
         label: "Python-Prompt-Toolkit"
       },
       {
-        value: 575,
+        value: 596,
         color: "#9b12cf",
         highlight: "#cd72f0",
         label: "Thor"
@@ -135,7 +135,7 @@
 
       // radar chart
       var languagesRadarChartData = {
-        labels: ["Python","Ruby", "Haxe", "Shell","C","Go","Javascript","Java"],
+        labels: ["Python","Javascript", "Java", "Ruby","C","C++","Go","Others"],
         datasets: [
         {
           label: "Cisco Users",
@@ -145,53 +145,47 @@
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(151,187,205,1)",
-          data: [35, 12, 5, 4, 3, 3, 2, 2, ]
+          data: [24, 15, 13, 12, 8, 4, 4, 20]
         }
         ]
       }; // radar chart
 
       var contributorPieChartData = [
       {
-        value: 25,
+        value: 1862,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "johnweldon"
       },
       {
-        value: 11,
+        value: 836,
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Snergster"
       },
       {
-        value: 9,
+        value: 685,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "fluffy"
       },
       {
-        value: 8,
+        value: 568,
         color: "#e6ad14",
         highlight: "#e8b52b",
         label: "danehans"
       },
       {
-        value: 7,
+        value: 530,
         color: "#9b12cf",
         highlight: "#cd72f0",
         label: "BrianHicks"
-      },
-      {
-        value: 5,
-        color: "rgba(151,187,205,1)",
-        highlight: "rgba(151,187,205,0.5)",
-        label: "altvnk"
       }
       ] // pie chart data
 
 
       var lineChartData = {
-        labels : ["January","February","March","April","May","June","July"],
+        labels : ["January","February","March","April","May","June","July", "August", "September"],
         datasets : [
         {
           label: "My First dataset",
@@ -201,7 +195,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(220,220,220,1)",
-          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
         },
         {
           label: "My Second dataset",
@@ -211,7 +205,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
         }
         ]
 

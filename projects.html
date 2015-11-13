@@ -177,13 +177,13 @@
         var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d");
 
         window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true
+          responsive: true, scaleLabel: "<%= ' ' + value%>"
         });
 
         var ctx_bar = document.getElementById("templatemo-bar-chart").getContext("2d");
 
         window.myBar = new Chart(ctx_bar).Bar(lineChartData, {
-          responsive: true
+          responsive: true, scaleLabel: "<%= ' ' + value%>"
         });
 
       };

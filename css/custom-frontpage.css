@@ -282,6 +282,9 @@ section#video{
     .navbar-brand {
       padding-left: 16px;
     }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #dddddd;
+    }
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {

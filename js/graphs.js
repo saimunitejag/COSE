@@ -185,27 +185,17 @@
 
 
       var lineChartData = {
-        labels : ["January","February","March","April","May","June","July", "August", "September"],
+        labels : ["ODL-Openstack","ODL","Networking-ODL","X-Stackforge","Controller","Neutron-Drivers","Opflex", "Floodlight", "Releng-Auto", "BGP-Pathman"],
         datasets : [
         {
-          label: "My First dataset",
-          fillColor : "rgba(220,220,220,0.2)",
-          strokeColor : "rgba(220,220,220,1)",
-          pointColor : "rgba(220,220,220,1)",
-          pointStrokeColor : "#fff",
-          pointHighlightFill : "#fff",
-          pointHighlightStroke : "rgba(220,220,220,1)",
-          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-        },
-        {
-          label: "My Second dataset",
+          label: "ODL Contributions",
           fillColor : "rgba(151,187,205,0.2)",
           strokeColor : "rgba(151,187,205,1)",
           pointColor : "rgba(151,187,205,1)",
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+          data : [37,32,10,5,3,3,3,2,2,2]
         }
         ]
 

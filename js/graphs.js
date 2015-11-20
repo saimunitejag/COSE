@@ -185,7 +185,7 @@
 
 
       var lineChartData = {
-        labels : ["ODL-Openstack","ODL","Networking-ODL","X-Stackforge","Controller","Neutron-Drivers","Opflex", "Floodlight", "Releng-Auto", "BGP-Pathman"],
+        labels : ["Cisco", "Independent", "RedHat","Brocade","Linux Foundation","Pantheon","Ericsson","NEC", "IBM", "Others"],
         datasets : [
         {
           label: "ODL Contributions",
@@ -195,7 +195,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [37,32,10,5,3,3,3,2,2,2]
+          data : [53,7,6,5,5,4,3,3,2,12]
         }
         ]
 

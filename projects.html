@@ -98,7 +98,7 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="panel panel-primary">
-                  <div class="panel-heading text-center">Our Top 10 Contributions to OpenDaylight by Repo (%)</div>
+                  <div class="panel-heading text-center">Top Contributions by Companies to OpenDaylight (%)</div>
                   <canvas id="templatemo-bar-chart"></canvas>
                 </div>
             </div> 
@@ -184,13 +184,13 @@
         var monthlyContributions_line = document.getElementById("monthlyContributions-line").getContext("2d");
 
         window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true, scaleLabel: "<%= ' ' + value%>"
+          responsive: true, scaleLabel: " <%= ' ' + value + ' '%>"
         });
 
         var ctx_bar = document.getElementById("templatemo-bar-chart").getContext("2d");
 
         window.myBar = new Chart(ctx_bar).Bar(lineChartData, {
-          responsive: true, scaleFontSize: 10, scaleLabel: "<%= ' ' + value%>"
+          responsive: true, scaleFontSize: 10, scaleLabel: "<%= '  ' + value%>"
         });
 
       };

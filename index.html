@@ -321,7 +321,7 @@
         var contributor_doughnut = document.getElementById("contributor-doughnut").getContext("2d");
 
         window.monthlyContributions = new Chart(monthlyContributions_line).Line(monthlyCommits, {
-          responsive: true, scaleLabel: "<%= ' ' + value%>"
+          responsive: true, scaleLabel: "<%= '  ' + value%>"
         });
 
         window.forksPieChart = new Chart(forks_pie).Pie(forksPieChartData,{

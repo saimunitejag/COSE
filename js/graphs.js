@@ -185,18 +185,29 @@
 
 
       var lineChartData = {
-        labels : ["Cisco", "Independent", "RedHat","Brocade","Linux Foundation","Pantheon","Ericsson","NEC", "IBM", "Others"],
+        labels : ["Controller", "YangTools", "BGPCep", "Mdsal", "OpenFlow Plugin"],
         datasets : [
         {
-          label: "ODL Contributions",
+          label: "ODL Top 5 Project Commits",
           fillColor : "rgba(151,187,205,0.2)",
           strokeColor : "rgba(151,187,205,1)",
           pointColor : "rgba(151,187,205,1)",
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [53,7,6,5,5,4,3,3,2,12]
+          data : [3267, 1834, 1582, 1330, 1083]
+        },
+        {
+          label: "ODL Top 5 Project by Lines of Code",
+          fillColor : "rgba(220,220,220,0.2)",
+          strokeColor : "rgba(220,220,220,1)",
+          pointColor : "rgba(220,220,220,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [1889, 690, 584, 406, 298]
         }
+
         ]
 
       }; // lineChartData used for testing

@@ -35,7 +35,7 @@
       } // commits by month
 
       var topUsersByReposOwned = {
-        labels : ["v0lkan","hildjj","lizhizhou", "danehans", "WenyuChang", "davidzou", "svalleru", "retr0h", "fuji246", "ttsvetko"],
+        labels : ["hemanth","trevorwang","nvoron23", "weixu8", "rajasoun", "animeshinvinci", "mokhan", "AlexBaranosky", "dafyddcrosby", "bozzmob"],
         datasets : [
         {
           label: "Top Users by # of Repos Owned",
@@ -45,13 +45,13 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [81, 81, 80, 77, 74, 66, 65, 64, 64, 56]
+          data : [457, 420, 419, 302, 200, 194, 148, 124, 108, 104]
         }
         ]
       } // top users by Repos owned
 
       var topUsersByFollowers = {
-      labels : ["hemanth","hoisie","v0lkan", "brikis98", "jonathanslenders", "AlexBaranosky", "retr0h", "rohanagrawal", "akeep", "mestery"],
+      labels : ["hemanth","hoisie","v0lkan", "brikis98", "jonathanslenders", "akeep", "AlexBaranosky", "retr0h", "rohanagrawal",  "mestery"],
       datasets : [
         {
           label: "Top Users by # of Followers",
@@ -61,7 +61,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [415, 361, 243, 184, 158, 63, 62, 58, 57, 41]
+          data : [534, 376, 252, 204, 194, 68, 65, 63, 56, 45]
       }
       ]
 
@@ -69,19 +69,19 @@
 
       var forksPieChartData = [
       {
-        value: 616,
+        value: 648,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Openh264"
       },
       {
-        value: 343,
+        value: 361,
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Web.go"
       },
       {
-        value: 176,
+        value: 208,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Mantl"
@@ -93,40 +93,40 @@
         label: "Redis"
       },
       {
-        value: 102,
+        value: 112,
         color: "#9b12cf",
         highlight: "#cd72f0",
-        label: "Moustache"
+        label: "Nexus9000"
       }
       ] // pie chart data
 
       var watchersDonutChartData = [
       {
-        value: 1892,
+        value: 1932,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Openh264"
       },
       {
-        value: 851,
+        value: 903,
         color: "#2e8a0c",
         highlight: "#3db810",
         label: "PtPython"
       },
       {
-        value: 1557,
+        value: 1570,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Pyvim"
       },
       {
-        value: 1779,
+        value: 1839,
         color: "#e6ad14",
         highlight: "#e8b52b",
         label: "Python-Prompt-Toolkit"
       },
       {
-        value: 596,
+        value: 598,
         color: "#9b12cf",
         highlight: "#cd72f0",
         label: "Thor"
@@ -152,36 +152,36 @@
 
       var contributorPieChartData = [
       {
-        value: 1862,
+        value: 5102,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "johnweldon"
+        label: "hemanth"
       },
       {
-        value: 836,
+        value: 3889,
         color: "#46BFBD",
         highlight: "#5AD3D1",
-        label: "Snergster"
+        label: "jsquyres"
       },
       {
-        value: 685,
+        value: 1779,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "fluffy"
+        label: "jonathanslenders"
       },
       {
-        value: 568,
+        value: 1621,
         color: "#e6ad14",
         highlight: "#e8b52b",
-        label: "danehans"
+        label: "shihuade"
       },
       {
-        value: 530,
+        value: 1550,
         color: "#9b12cf",
         highlight: "#cd72f0",
-        label: "BrianHicks"
+        label: "andyyuan78"
       }
-      ] // pie chart data
+      ] // pie chart
 
 
       var lineChartData = {
@@ -210,4 +210,4 @@
 
         ]
 
-      }; // lineChartData used for testing
+      };

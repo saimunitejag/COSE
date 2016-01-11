@@ -18,7 +18,7 @@
       } // common languages
 
       var monthlyCommits = {
-        labels : ["January","February","March", "April", "May", "June", "July", "August", "September", "October"],
+        labels : ["January","February","March", "April", "May", "June", "July", "August", "September", "October","November","December"],
         datasets : [
         {
           label: "Monthly Commits",
@@ -28,7 +28,7 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(151,187,205,1)",
-          data : [320,405,153,148,167,111,281,200,146, 201]
+          data : [320,405,153,148,167,111,281,200,146, 201,206,131]
         }
         ]
 

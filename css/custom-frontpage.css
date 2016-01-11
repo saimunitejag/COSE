@@ -56,11 +56,11 @@ h4 {
 }
 
 .icon-opensource {
-    color: #0067ce;
-    }
+  color: #e6ad14;
+}
 
 .icon-opensource:hover {
-  color: #e6ad14;
+  color: #0067ce;
 }
 
 .btn-readmore {

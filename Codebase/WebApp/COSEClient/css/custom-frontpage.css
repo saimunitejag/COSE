@@ -1,0 +1,318 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+@font-face {
+  font-family: 'CiscoSansTTLight';
+  src: url('../fonts/CiscoSansTTLight.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/CiscoSansTTLight.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CiscoSansTTLight.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/CiscoSansTTLight.ttf') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/CiscoSansTTLight.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CiscoSansTTLight.ttf') format('svg'); /* Legacy iOS */
+}
+
+p {
+    font-weight: normal;
+    font: 14px/1.55 'CiscoSansTTLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+    line-height: 120%;
+}
+
+h1 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+  line-height: 110%;
+}
+h2 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+  line-height: 110%;
+}
+h3 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+h4 {
+  font-family: 'CiscoSansLight', Arial,'Liberation Sans',FreeSans,sans-serif;
+  line-height: 110%;
+}
+
+.info .sub-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.blog-heading {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.icon-opensource {
+    color: #0067ce;
+    }
+
+.icon-opensource:hover {
+  color: #e6ad14;
+}
+.btn-calltoaction {
+    color: #ecb727;
+    background-color: #666666;
+    border-color: #4cae4c;
+}
+
+.call-to-action{
+  padding-top: 10px;
+}
+
+.top-trending-projects {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+section#intro{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    background-position: center;
+    padding: 0px 0 0px;
+}
+section#tweets{
+    position: relative;
+    width: 100%;
+    background-color: #02bcd4;
+    background-position: center;
+    color: white;
+    padding: 0px 0 20px;
+}
+
+section#projects{
+    position: relative;
+    width: 100%;
+    background-color: #4c9dec;
+    background-position: center;
+    color: white;
+    padding: 0px 0 20px;
+}
+
+section#ending{
+    position: relative;
+    width: 100%;
+    background-color: #666666;
+    background-image: url(../img/3px-tile.png);
+    color: white;
+    padding: 0px 0 0px;
+}
+
+section#gitdata{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    background-position: center;
+    background-size: cover;
+    padding: 0px 0 20px;
+}
+
+section#video{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    background-position: center;
+    background-size: cover;
+    padding: 0px 0 20px;
+}
+
+.social-icons li {
+  float: left;
+}
+.social-icons li.last {
+  margin-right: 0;
+}
+.social-icons a {
+  display: inline-block;
+  background: #4c9dec;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 8px;
+  float: left;
+}
+.social-icons a:hover {
+  background: #e6ad14;
+}
+.social-icons a .fa {
+  color: #fff;
+}
+.social-icons a .fa:before {
+  font-size: 26px;
+  text-align: center;
+  padding: 0px;
+}
+
+.site-header {
+    height: 300px;
+    background-color: #0073e5;
+    background-image: url(../img/3px-tile.png);
+    line-height: 280px;
+}
+
+.subpages {
+  height: 200px;
+  line-height: 180px;
+}
+
+.blog-articles {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.cisco{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.headline {
+    font-size: 6em;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.subpage-headline{
+    font-size: 5em;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+}
+
+@media(max-width: 480px) {
+  .headline {
+    font-size: 5em;
+  }
+  .subpage-headline{
+    font-size: 3em;
+  }
+}
+
+.headline-small {
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.img-white-bg {
+    background-color: white;
+    padding: 25px;
+}
+
+.contributor{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contributor .contributor-details{
+  margin-left: 65px;
+}
+
+.contributor .contributor-details h4{
+  margin: 0;
+  margin-bottom: 3px;
+  padding-top: 9px;
+  padding-left: 3px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contributor .contributor-details h4 a{
+  color: #666666;
+}
+
+.contributor .contributor-details span{
+  padding-left: 3px;
+  display: block;
+  font-size: 14px;
+  color: #787878;
+}
+
+.contributor img{
+  max-width: 60px;
+  float: left;
+}
+
+h2.blue-headings {
+  color: #0067ce;
+  font-weight: bold;
+}
+
+.Devnet-logo{
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.logos-thumbnail{
+  max-width: 150px;
+  max-height: 150px;
+  position:relative;
+  overflow:hidden;
+  padding: 0;
+}
+
+.copyright-footer{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+  margin-right:-2px;
+              }
+
+.logos-thumbnail:hover
+{
+-moz-box-shadow: 0 0 5px 5px #ddd;
+-webkit-box-shadow: 0 0 5px 5px #ddd;
+box-shadow: 0 0 5px 5px #ddd;
+}
+
+.img-circle:hover{
+-moz-box-shadow: 0 0 5px 5px #ddd;
+-webkit-box-shadow: 0 0 5px 5px #ddd;
+box-shadow: 0 0 5px 5px #ddd;
+}
+
+section#tiles{
+    background-color: #fff;
+}
+
+footer {
+    margin: 0px 0;
+    margin-top: 10px;
+}

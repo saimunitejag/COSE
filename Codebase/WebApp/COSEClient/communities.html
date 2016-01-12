@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/templatemo_main.css">
+
+    <title>Open Source Communities</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom-frontpage.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+
+    <style type="text/css">
+
+    .arc path {
+      stroke: #fff;     
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#">Cisco Logo</a> -->
+                <a class="navbar-brand" href="index.html"><img class="cisco" src="http://research.cisco.com/img/background/cisco_logo.png" alt="Cisco Systems" height="28" width="54"></a>
+                <!-- <img class="cisco" src="http://research.cisco.com/img/background/cisco_logo.png" alt="Cisco Systems" height="25" width="52"> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://blogs.cisco.com/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Quick Links<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                         <li><a href="https://developer.cisco.com/site/devnet/home/index.gsp">DevNet</a></li>
+                         <li><a href="http://research.cisco.com">Research</a></li>
+                         <li><a href="#">STEAM</a></li>     
+                         <li><a href="http://mantl.io">Mantl.io</a></li>                    
+                         <li><a href="http://ciscocloud.github.io/shipped/dist/#/">Project Shipped</a></li>
+                         <li><a href="http://research.cisco.com/opensource.html">Open Source</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Image Background Page Header -->
+    <header class="site-header subpages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="subpage-headline">Open Source Communities</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="tiles">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                <h2 class="text-center blue-headings">The Strength Of Open Source Comes From Community</h2>
+
+                <h4>Cisco recognizes that Open Source communities are innovation centers where the world’s greatest minds come together to work towards a common goal. Open Source technologies and the communities behind them are where much of this innovation is being driven from today. 
+                </h4>
+
+                <h4>
+                  We contribute to Open Source through thought leadership, code contributions and financial support to the non-profit foundations behind them.</h4>
+                <h2 class="text-center blue-headings">Live Feed Data From Communities</h2>
+                <br>
+            </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+                      <div id="forks-pie-chart"></div>
+                      <h4>Number of Forks</h4>
+                      <span class="text-muted text-center">Top 5 repos by number of forks</span>  
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">           
+                      <div id="watchers-doughnut-chart"></div>
+                      <h4>Number of Watchers</h4>
+                      <span class="text-muted">Top 5 repos by number of watchers</span> 
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+                    <div style="height: 255px;">
+                        <canvas id="languages-radar-chart" style="margin-top:45px;" ></canvas>
+                    </div>      
+                      
+                      <h4>Programming Languages</h4>
+                      <span class="text-muted">Most popular languages used</span> 
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">           
+                      <div id="contributor-doughnut" style="height:235px;margin-top:20px;"></div>
+                      <h4>Event Share</h4>
+                      <span class="text-muted">Top contributors by share of events</span> 
+                    </div>
+                </div>
+                <br>
+                
+                <h2 class="text-center blue-headings">Take A Look At Communities We Are Involved In...</h2>
+                <!-- <br> -->
+              
+                <div class="row">
+                <br>
+                <div class="col-md-3"><a href="https://github.com/openstack/"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/CloudNative.png" alt="Cloud Native Computing Foundation"></a><h4 class="text-center">Cloud Native Computing Foundation</a></div>
+                <div class="col-md-3"><a href="https://github.com/opendaylight"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/iovisor.png" alt="IO Visor Project"></a><h4 class="text-center">IO Visor Project</a></div>
+                <div class="col-md-3"><a href="http://www.openkinetic.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/kinetic.png" alt="KINETIC"></a><h4 class="text-center">KINETIC</a></div>
+                <div class="col-md-3"><a href="http://www.linuxfoundation.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/linux-foundation.jpg" alt="Linux Foundation"></a>
+                    <h4 class="text-center">Linux Foundation</a></div> 
+                <br>       
+                </div>
+
+            <!-- Row 2 -->
+                <div class="row">
+                <br>
+                <div class="col-md-3"><a href="http://www.opencompute.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/opencompute.jpg" alt="Open Compute Project"></a>
+                    <h4 class="text-center">Open Compute Project</a></div>
+                <div class="col-md-3"><a href="http://ciscocloud.github.io/shipped/dist/#/"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/opencontainer.png" alt="Open Container Initiative"></a>
+                    <h4 class="text-center">Open Container Initiative</a></div>
+                <div class="col-md-3"><a href="https://github.com/opendaylight"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/ODLL.jpg" alt="OpenDaylight"></a><h4 class="text-center">OpenDaylight</a></div>
+                <div class="col-md-3"><a href="https://github.com/openstack/"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/openstack.png" alt="Openstack"></a><h4 class="text-center">OpenStack</a></div>
+                <br>
+                </div>
+            <!-- Row 3 -->
+                <div class="row">
+                <br>
+                <div class="col-md-3"><a href="http://onosproject.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/onos.png" alt="ONOS"></a><h4 class="text-center">ONOS</a></div>
+                <div class="col-md-3"><a href="http://opnfv.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/opnfv.png" alt="OPNFV"></a>
+                    <h4 class="text-center">OPNFV</a></div>    
+                <div class="col-md-3"><a href="http://www.snort.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/snort.gif" alt="Snort"></a><h4 class="text-center">Snort</a></div>
+                <div class="col-md-3"><a href="http://spark.apache.org"><img class="img-circle img-responsive img-center logos-thumbnail" src="img/spark.png" alt="Spark"></a><h4 class="text-center">Spark</a></div>
+                <br>
+                </div>
+              
+      </div>
+    <br>
+            
+    </section>
+
+    <section id="ending">
+        <div class="container">
+        <div class="row">
+            <div class="info text-center">
+                <br>
+                    <h3 class="sub-title">Get Connected</h3>
+                    <ul class="social-icons list-inline">
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.slideshare.com"><i class="fa fa-slideshare"></i></a></li>
+                        <li class="last"><a href="#"><i class="fa fa-envelope"></i></a></li>              
+                    </ul>
+                </div><!--//info-->
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer>
+          <div class="container">
+                    <div class="Devnet-logo">
+                      <a href="https://developer.cisco.com/site/devnet/home/index.gsp"><img src="img/devnet_white.png"></img></a>
+                    </div>
+                    <div class="copyright-footer">
+                      <a href="http://www.cisco.com/web/siteassets/legal/terms_condition.html">Terms & Conditions</a> | <a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html">Privacy Statement</a> | <a href="http://www.cisco.com/web/siteassets/legal/trademark.html">Trademarks</a> | <a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html#cookies">Cookies</a>
+                    </div>
+          </div>   
+        </footer>
+        
+    </div>
+</div>
+
+</section>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/Chart.min.js"></script>
+    <script src="js/graphs.js"></script>
+
+    <script>
+      window.onload = function(){
+        number_of_forks();
+        number_of_watchers();
+        top_user_events();
+        /*
+        var forks_pie = document.getElementById("forks-pie-chart").getContext("2d"); // DONE
+
+        var watchers_doughnut = document.getElementById("watchers-doughnut-chart").getContext("2d"); // DONE
+        */
+        var languagesRadar = document.getElementById("languages-radar-chart").getContext("2d"); // DONE
+        /*
+        var contributor_doughnut = document.getElementById("contributor-doughnut").getContext("2d");
+
+        window.forksPieChart = new Chart(forks_pie).Pie(forksPieChartData,{
+          responsive: true
+        }); // final
+
+        window.watchersDoughnutChart = new Chart(watchers_doughnut).Doughnut(watchersDonutChartData,{
+          responsive: true
+        }); // final
+        */
+        var LanguagesRadarChart = new Chart(languagesRadar).Radar(languagesRadarChartData, {
+          responsive: true
+        }); // final
+        /*
+        window.contributorDoughnutChart = new Chart(contributor_doughnut).Doughnut(contributorPieChartData,{
+          responsive: true
+        }); // final
+        */
+      };
+    </script>
+</body>
+
+</html>

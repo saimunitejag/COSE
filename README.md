@@ -62,7 +62,7 @@ The data is gathered via:
 [![](http://img.ctrlv.in/img/16/01/12/5694d7f734972.png)](http://ctrlv.in/695648)
 
 ### Running the Application
-
+The WebApp is based on server-client model. The Server is implemented with Node.js and Client is written in HTML, CSS and JS.
 #### Server
 The [Server](https://github.com/CiscoCloud/COSE/tree/master/Codebase/WebApp/COSEServer) is written using Node.js. The Server can be started by running the "server.js" file.
 ```js

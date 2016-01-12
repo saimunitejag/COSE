@@ -1,5 +1,7 @@
 #### Crawlers
-Crawlers are used to pull the data related to open-source projects from GitHub.
+Crawlers are used to pull the data related to open-source projects from GitHub. We are gathering the data via 2 mediums:
+* Google BigQuery - This is used to get the timeline data of events
+* GitHub API - This is used to get latest data/statistics related to users and repositories.
 
 ##### Crontab Entry to manage data crawlers.
 ```

@@ -46,7 +46,7 @@ The COSE application is running on a separate DCOS cluster. DCOS cluster has 10 
 
 
 ### Application Architecture
-[Architecture Placeholder]
+[![](http://img.ctrlv.in/img/16/01/14/569750a49c8d9.png)](http://ctrlv.in/696568)
 
 ### Data Source
 [GitHub](https://github.com/) hosts open-source software projects. This is the main source of data.
